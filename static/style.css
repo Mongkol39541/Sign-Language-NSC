@@ -1,0 +1,133 @@
+body {
+    position: relative;
+    background-image: url("../static/dataimage/pexels-fauxels-3184418.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#logo {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+#logo-nav {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.bg1 {
+    background-image: url("../static/dataimage/Family.png");
+}
+
+.bg2 {
+    background-image: url("../static/dataimage/Feeling.png");
+}
+
+.bg3 {
+    background-image: url("../static/dataimage/Person.png");
+}
+
+.bg4 {
+    background-image: url("../static/dataimage/Place.png");
+}
+
+.bg5 {
+    background-image: url("../static/dataimage/Pronoun.png");
+}
+
+.bg6 {
+    background-image: url("../static/dataimage/Question.png");
+}
+
+.bg7 {
+    background-image: url("../static/dataimage/Sick.png");
+}
+
+.bg8 {
+    background-image: url("../static/dataimage/Time.png");
+}
+
+.bg9 {
+    background-image: url("../static/dataimage/Verb.png");
+}
+
+.bg10 {
+    background-image: url("../static/dataimage/Greeting.jpg");
+}
+
+.bg11 {
+    background-image: url("../static/dataimage/Weather.jpg");
+}
+
+.box {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: .4s;
+    position: relative;
+}
+
+.content .box h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #000000;
+}
+
+.content .box:hover {
+    transform: translateY(-15px);
+}
+
+nav #navtext {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav #navtext:hover::after {
+    width: 50%;
+    opacity: 1;
+}
+
+.txt {
+    text-indent: 50px;
+}
+
+.blackk {
+    font-size: 1.7rem;
+    padding: 10px 30px;
+    background: none;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    transition: .4s;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blackk::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #26a84d;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .4s;
+}
+
+.blackk:hover {
+    color: #fff;
+}
+
+.blackk:hover::after {
+    width: 100%;
+}

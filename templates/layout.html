@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Videostreaming</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/dataimage/rocket.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    {% block content %}
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="nav-link me-3 active" href="/"
+          ><i class="fa-solid fa-rocket" id="logo"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link me-3 active text-light" href="/" id="navtext"
+              ><i class="fa-solid fa-house" id="logo-nav"></i> Home
+            </a>
+            <a class="nav-link me-3 active text-light" href="#" id="navtext"
+              ><i class="fa-solid fa-people-robbery" id="logo-nav"></i> Tutorial
+            </a>
+            <a
+              class="nav-link me-3 active text-light"
+              href="/about"
+              id="navtext"
+              ><i class="fa-solid fa-file-signature" id="logo-nav"></i> About
+            </a>
+            <a
+              class="nav-link me-3 active text-light"
+              href="/dataDeveloper"
+              id="navtext"
+              ><i class="fa-solid fa-address-card" id="logo-nav"></i> Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container content text-light">
+      {% block body %} {% endblock %}
+    </div>
+    {% endblock %}
+  </body>
+</html>
