@@ -20,7 +20,8 @@ numpy==1.21.6
 opencv-contrib-python==4.6.0.66
 opencv-python==4.6.0.66
 sklearn-crfsuite==0.3.6
-tensorflow 2.10.0 has requirement protobuf<3.20,>=3.9.2, but you'll have protobuf 3.20.3 which is incompatible.
+protobuf==3.19.1
+tensorflow 2.10.0
 tensorflow==2.10.0
 tensorflow-estimator==2.10.0
 tensorflow-hub==0.12.0
