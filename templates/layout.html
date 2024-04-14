@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Videostreaming</title>
-    <link rel="stylesheet" href="../static/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../static/dataimage/rocket.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    {% block content %}
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="nav-link me-3 active" href="/"
-          ><i class="fa-solid fa-rocket" id="logo"></i>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link me-3 active text-light" href="/" id="navtext"
-              ><i class="fa-solid fa-house" id="logo-nav"></i> Home
-            </a>
-            <a class="nav-link me-3 active text-light" href="#" id="navtext"
-              ><i class="fa-solid fa-people-robbery" id="logo-nav"></i> Tutorial
-            </a>
-            <a
-              class="nav-link me-3 active text-light"
-              href="/about"
-              id="navtext"
-              ><i class="fa-solid fa-file-signature" id="logo-nav"></i> About
-            </a>
-            <a
-              class="nav-link me-3 active text-light"
-              href="/dataDeveloper"
-              id="navtext"
-              ><i class="fa-solid fa-address-card" id="logo-nav"></i> Contact
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="container content text-light">
-      {% block body %} {% endblock %}
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Videostreaming</title>
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="icon" type="image/x-icon" href="../static/dataimage/rocket.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <video id="background-video" autoplay loop muted>
+    <source src="../static/dataimage/pexels.mp4" type="video/mp4">
+  </video>
+  <nav>
+    <a href="/"><span class="hoverable"><strong><i class="fa-solid fa-house"></i> Home</strong></span></a>
+    <a href="/tutorial"><span class="hoverable"><strong><i class="fa-solid fa-graduation-cap"></i>
+          Tutorial</strong></span></a>
+    <a href="/about"><span class="hoverable"><strong><i class="fa-solid fa-file-pen"></i> About</strong></span></a>
+    <a href="/dataDeveloper"><span class="hoverable"><strong><i class="fa-solid fa-address-card"></i>
+          Contact</strong></span></a>
+  </nav>
+  <br>
+  {% block content %}
+  {% block body %} {% endblock %}
+  {% endblock %}
+  <br>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2023 Comparative Analysis of LSTM and CNN Architectures for Sign Language Translation. All rights reserved.
+      </p>
+      <p>Contact us: 65070186@kmitl.ac.th | Phone: 0987095239</p>
+      <p>About Us</p>
+      <a href="https://github.com/Mongkol39541" target="_blank">
+        <p><i class="fa-brands fa-github"></i> Github: Magi Boss</p>
+      </a>
+      <a href="https://www.instagram.com/_magiboss/" target="_blank">
+        <p><i class="fa-brands fa-instagram"></i> IG: _magiboss</p>
+      </a>
+      <a href="https://www.facebook.com/bossvsmod/" target="_blank">
+        <p><i class="fa-brands fa-facebook"></i> FB: Mongkol Boss Boondamnoen</p>
+      </a>
     </div>
-    {% endblock %}
-  </body>
+  </footer>
+</body>
+
+<script>
+  const video = document.getElementById('background-video');
+  video.autoplay = true;
+  video.loop = true;
+  video.muted = true;
+</script>
+
 </html>

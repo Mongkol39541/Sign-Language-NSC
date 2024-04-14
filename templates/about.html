@@ -1,203 +1,351 @@
 {% extends "layout.html" %} {% block body %}
 
-<br />
-<h1 class="text-center">
-  <i class="fa-solid fa-bullseye" style="color: rgb(255, 0, 0)"></i>
-  <strong>วัตถุประสงค์และเป้าหมาย (Objectives and Goals)</strong>
-</h1>
-<h4 class="txt p-3">
-  คนหูหนวกและเป็นใบ้ไม่สามารถได้ยินและพูดได้ พวกเขาเผชิญกับความท้าทาย
-  มากมายในชีวิตประจำวัน เพื่อนำมาซึ่งการเปลี่ยนแปลง
-  เราคิดที่จะทำบางสิ่งที่เปลี่ยนแปลงชีวิตของพวกเขาและเพื่อต้องการแก้ปัญหาการสื่อสารระหว่างคนที่ใช้ภาษามือกับคนปกติที่มีความยากและลำบากในการสื่อสารกัน
-</h4>
-<br /><br /><br />
-<h1 class="text-center">
-  <i class="fa-solid fa-pen-to-square" style="color: rgb(0, 119, 255)"></i>
-  <strong>เนื้อเรื่องย่อ (Story Board)</strong>
-</h1>
-<h4 class="txt p-3">
-  เนื่องจากสถิติของผู้พิการทางการได้ยินมีเยอะเป็นอันดับ 2 ของผู้พิการทั้งหมด
-  ซึ่งนับเป็นร้อยละ 18.65 โปรแกรมช่วยแปลภาษาใบ้นี้จะช่วยยกคุณภาพชีวิตของผู้พิการ
-  ทางการได้ยินโดยพวกเค้าเหล่านี้จะสามารถใช้ชีวิตได้สดวกมากขึ้นหากมีเทคโนโลยีที่สามารถ
-  สื่อสารได้ง่ายและสดวกกับคนปกติ
-</h4>
-<img
-  class="rounded position-relative top-0 start-50 translate-middle-x"
-  width="600"
-  height="500"
-  src="../static/dataimage/Analys.png"
-/>
-<br /><br /><br /><br /><br />
-<h1 class="text-center">
-  <i class="fa-solid fa-triangle-exclamation" style="color: gold"></i>
-  <strong
-    >ปัญหาของผู้พิการทางการได้ยินในการใช้ชีวิตร่วมกับคนปกติ (Problems of the
-    hearing impaired in living with normal people)</strong
-  >
-</h1>
-<h4 class="p-3">
-  1. คนหูหนวกมีภาษาการเขียนไม่เหมือนคนปกติ รูปแบบการเขียนจะ
-  เป็นประโยคภาษาไทยที่เรียงเหมือนไวยากรณ์ภาษาอังกฤษ<br />
-  2. จะลงคอร์สเรียนพิเศษเหมือนเด็กปกติไม่ค่อยได้ เนื่องจากมีปัญหาด้านการสื่อสาร
-  และการฟัง<br />
-  3. เวลาจะคุยกับคนปกติต้องใส่เครื่องช่วยฟังตลอด <br />
-  4. จะไปไหนต้องมีผู้ปกครองหรือเพื่อนสนิทไปด้วยตลอด เพื่อลดการเกิดอุบัติเหตุ
-  เนื่องจากไม่ได้ยินเสียง <br />
-  5. ปัญหาด้านการเดินทาง เนื่องจากไม่ได้ยินเสียง
-  ถ้าเดินอยู่แล้วมีรถขับมาจ่อด้านหลังบีบแตรใส่คนหูหนวกบางคนก็ไม่ได้ยิน <br />
-  6. ชอบโดนเมินเวลาไม่ได้ยินแล้ว บางคนก็ชอบเดินหนี ไม่พูดซ้ำ บางคนหัวเราะใส่
-</h4>
-<br /><br /><br />
-<h1 class="text-center">
-  <i
-    class="fa-solid fa-screwdriver-wrench"
-    style="color: rgb(117, 117, 117)"
-  ></i>
-  <strong>โปรแกรมและเครื่องมือต่างๆ (Programs and Tools)</strong>
-</h1>
-<div class="row row-cols-1 row-cols-md-6 p-3">
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Python.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Python</strong>
-      </h3>
+<div class="row">
+  <div class="column-details">
+    <h2>Literature Review</h2>
+    <br>
+    <p>
+      Sign language translation has become a prominent area of
+      research, aiming to bridge the communication gap between
+      individuals with hearing disabilities, who predominantly use
+      sign language, and those who do not comprehend it. In this
+      literature review, we focus on exploring the effectiveness of
+      LSTM (Long Short-Term Memory) and CNN (Convolutional
+      Neural Network) architectures to enhance translation accuracy,
+      particularly in multi-word translation scenarios.
+      Several studies have delved into sign language recognition
+      and translation, leveraging the Mediapipe framework alongside
+      LSTM architectures. For instance, in the work of</p>
+    <br>
+    <ol>
+      <li>The researchers proposed a system for recognizing American Sign
+        Language (ASL) alphabets. By combining the Mediapipe li-
+        brary with LSTM models, they demonstrated the effectiveness
+        of LSTM architectures in capturing temporal dependencies
+        within sign language gestures, leading to accurate recognition
+        of ASL alphabets. This study underscores the potential of
+        LSTM models in recognizing static sign language gestures.
+        Similarly, in the context of Indian Sign Language (ISL)
+        gestures.</li>
+      <li>Focused on recognition tasks using the Mediapipe
+        Holistic framework. This approach captures multiple body
+        parts, including the face, hands, and upper body, to extract
+        relevant features for sign language recognition. The study
+        showcased the efficacy of Mediapipe Holistic in capturing
+        and analyzing a broader range of body movements, thereby
+        improving the accuracy of ISL gesture recognition.
+        Additionally,
+      <li>Provided a comprehensive exploration of
+        various techniques and challenges in automatic sign lan-
+        guage recognition. The paper discussed the use of machine
+        learning algorithms, including LSTM and CNN architectures,
+        for recognizing sign language gestures. It emphasized the
+        significance of capturing both hand and non-manual features
+        for a comprehensive understanding of gestures and outlined the
+        limitations and potential solutions for accurate sign language
+        recognition. Moreover, the GitHub repository by nicknochnack, as presented in.</li>
+      <li>Offers an implementation of action detection
+        for sign language using the Mediapipe library. This resource
+        provides valuable insights into the technical aspects and im-
+        plementation details of sign language recognition systems.
+        To further understand the state-of-the-art research on sign
+        language translation, we also examined.</li>
+      <li>Which investigates
+        real-time sign language recognition using CNN-LSTM net-
+        works, and.</li>
+      <li>A study on dynamic sign language recognition
+        using deep learning techniques. Additionally.</li>
+      <li>Presents real-
+        time hand gesture recognition for sign language translation
+        using LSTM networks.
+        In the context of our study.</li>
+      <li>Offers a comparative analysis
+        of LSTM and CNN architectures for sign language translation.
+        This paper serves as a key reference for our investigation into
+        the performance of these architectures.
+        Furthermore, we incorporated additional papers that con-
+        tribute to the exploration of CNN for sign language translation.</li>
+      <li>”Sign Language Translation with Deep Learning” by
+        Tae-Hyun Oh and Jae-Joon Han provides insights into deep
+        learning approaches for sign language translation.</li>
+      <li>”Sign Language Translation: LSTM versus Transformer” by Ugo Bordoni, Alejandro Betancourt-Rold ́an, and
+        Marco Munaro compares LSTM and Transformer architectures
+        for sign language translation.</li>
+      <li>”American Sign Language Recognition with CNN-
+        LSTM Model” by Yuanbo Cui, Ruoxi Jia, and Yue Zhao
+        explores CNN-LSTM models for American Sign Language
+        recognition.</li>
+      <li>”Sign Language Translation using Deep CNN-LSTM”
+        by Sneha R. Gondkar, Rajeshree D. Raut, and Avinash G.
+        Keskar discusses deep CNN-LSTM models for sign language
+        translation.</li>
+      <li>”A Review of Deep Learning Architectures for Sign
+        Language Translation” by Shalini Lathwal, Harish Kumar, and
+        Alok Kumar provides a comprehensive review of deep learning
+        architectures in sign language translation.</li>
+      <li>”Sign Language Recognition using CNN and LSTM”
+        by Chandana K., Preethi T., and V. Arvind Krishna investigates
+        CNN and LSTM models for sign language recognition.</li>
+      <li>”Real-Time Deep Learning Models for American Sign
+        Language Recognition” by Alexander Norcliffe, Amrith Setlur,
+        and Jacqueline Kory Westlund focuses on real-time deep
+        learning models for American Sign Language recognition.</li>
+      <li>”Fingerspelling Recognition in American Sign Lan-
+        guage Using CNN” by Ruoxi Jia, Yi Zhang, and Yue Zhao
+        explores CNN-based recognition for fingerspelling in Ameri-
+        can Sign Language.</li>
+    </ol>
+    <br>
+    <p>
+      All the mentioned papers contribute valuable insights to the
+      field of sign language recognition and translation, providing
+      a foundation for our experimental setup and comparison be-
+      tween LSTM and CNN architectures</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column-details">
+    <h2>Experimental Setup</h2>
+    <br>
+    <p>
+      In this study, we designed an experimental setup to facilitate
+      the collection and processing of sign language datasets. The
+      experimental setup involved the integration of various software
+      libraries, frameworks, and hardware components to achieve
+      our research objectives effectively. The key components of
+      our experimental setup are as follows:
+      Python: We utilized the Python programming language as
+      the primary programming tool for implementing our sign
+      language recognition and translation algorithms. Python offers
+      a wide range of libraries and frameworks that are instrumental
+      in machine learning and computer vision tasks.
+      OpenCV: OpenCV (Open Source Computer Vision Library)
+      was utilized for various computer vision tasks, including image
+      and video processing, to preprocess and augment the sign
+      language datasets.
+      TensorFlow: TensorFlow, an open-source machine learning
+      framework, played a crucial role in developing and training
+      deep learning models for sign language recognition. We lever-
+      aged TensorFlow’s flexibility and performance capabilities to
+      create CNN and LSTM architectures.
+      Mediapipe: The Mediapipe library was integrated into our
+      experimental setup to extract key facial landmarks and hand
+      gestures from video data captured using mobile cameras. This
+      enabled us to incorporate important non-manual features in
+      the recognition process.
+      YOLOv5: YOLOv5 (You Only Look Once version 5) was
+      utilized for real-time object detection to identify specific signs
+      and gestures in the video streams captured by the mobile
+      camera.
+      Roboflow: Roboflow, an online platform for computer vision
+      data management, was used to streamline dataset preparation
+      and organization. It allowed us to manage and annotate the
+      collected sign language datasets efficiently.
+      Hardware: We employed two primary hardware components
+      in our setup. First, we utilized a mobile camera from an iPhone
+      to capture sign language gestures and record video datasets in
+      real-world scenarios. Second, we leveraged Google Colab Pro
+      Plus, a cloud-based computing platform, to access powerful
+      GPU resources for training deep learning models.
+      Google Drive: To facilitate data storage and sharing, we
+      utilized Google Drive as the cloud storage solution for our
+      sign language datasets. All collected datasets were uploaded
+      and organized on Google Drive for easy access and sharing
+      among team members.
+      The experimental setup allowed us to collect real-world
+      sign language datasets using a mobile camera and efficiently
+      process and train deep learning models on Google Colab Pro
+      Plus. The integration of various software tools and hardware
+      components ensured a comprehensive and efficient workflow
+      throughout the research process.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column-details">
+    <h2>Methodology</h2>
+    <div class="details">
+      <ul style="list-style-type:none;">
+        <li>A. Research Objective</li>
+        <p>The primary objective of this research is to develop an
+          effective sign language translation program that facilitates
+          seamless communication between individuals with hearing
+          disabilities, who primarily use sign language, and those who
+          do not understand sign language. The program aims to address
+          the challenges faced by people with hearing disabilities in
+          expressing themselves and interacting with the hearing popu-
+          lation.
+          The research focuses on comparing two popular machine
+          learning architectures, CNN (Convolutional Neural Network)
+          and LSTM (Long Short-Term Memory), to determine which
+          model is more suitable for interpreting sign language gestures.
+          By conducting experiments using a comprehensive dataset
+          of sign language gestures, collected through imitation and
+          recording, we will assess the performance of the CNN and
+          LSTM models.
+          The study emphasizes the significance of technology, partic-
+          ularly machine learning techniques, in bridging the communi-
+          cation gap between sign language users and non-sign language
+          users. Leveraging advancements in artificial intelligence and
+          data processing, the program aims to develop a robust and
+          accurate translation system capable of effectively interpreting
+          various sign language expressions.
+          To ensure the effectiveness of the translation program, the
+          research underscores the importance of collecting a diverse
+          dataset that encompasses a wide range of sign language ges-
+          tures, including expressions, actions, and multi-word phrases.
+          The dataset’s comprehensiveness is essential for training and
+          evaluating the performance of the CNN and LSTM models
+          under real-world translation scenarios.
+          Beyond its technical aspects, the research also recognizes
+          the potential societal impact of successful sign language
+          translation systems. By fostering effective communication, the
+          program seeks to improve inclusivity and social integration
+          for individuals with hearing disabilities, enabling them to
+          participate more actively in various aspects of life.
+          The research findings will provide valuable insights into the
+          strengths and weaknesses of the CNN and LSTM models for
+          sign language translation. This knowledge will contribute to
+          the advancement of sign language translation technology and
+          guide further research in developing even more accurate and
+          efficient translation systems.
+          Ultimately, the research aspires to create a positive impact
+          on the lives of individuals with hearing disabilities, empow-
+          ering them with better means of expression and interaction.
+          By promoting equal opportunities for communication and
+          understanding, the program aims to create a more inclusive
+          and accessible society for all.</p>
+        <br>
+        <li>B. Data Collection</li>
+        <p>To develop an effective sign language translation program,
+          we commenced with the collection and preprocessing of the
+          sign language gesture dataset. Our dataset includes 10 common
+          words, such as ”Hello, Hungry, Sick, Sorry, Thank you, What,
+          When, Where, Who, Why,” which are frequently used in ev-
+          eryday life. Each pose uses 30 videos, with 1 video per session
+          of the pose. Some of the gestures were chosen because they
+          were similar to increase the difficulty of the test. The gestures
+          for these words were captured through videography, with the
+          author personally performing and recording each gesture using
+          American Sign Language (ASL) at a resolution of 1980 x 720
+          pixels and 30 frames per second video. This comprehensive
+          dataset provides a diverse range of ASL gestures for training
+          and testing our translation models.</p>
+        <br>
+        <li>C. Data Preprocessing</li>
+        <p>After capturing the sign language gesture videos, we pre-
+          process the data by dividing each video into individual image
+          Fig. 2. Word ”Why” action
+          Fig. 3. Word ”Why” action
+          Fig. 4. Word ”Hello” action
+          Fig. 5. Word ”Hello” action
+          frames. From each video, we carefully select 30 frames that
+          are appropriate for further analysis and model training.
+          For the CNN model’s dataset, we pick one frame out of the
+          30 frames captured, specifically choosing the frame that most
+          clearly represents the intended gesture. This single frame is
+          then utilized as the input for the CNN model.
+          On the other hand, for the LSTM model’s dataset, we utilize
+          all 30 frames obtained from each video. We leverage the
+          Mediapipe framework, specifically the holistic detect function,
+          to identify and extract the coordinates of each body point.
+          This process results in datasets containing the time series
+          coordinates of the detected body points for each gesture.</p>
+        <li>D. Model Selection</li>
+        <p>Sign language translation is essential for effective com-
+          munication between individuals with hearing disabilities who
+          primarily use sign language and those who do not understand
+          it. This section provides an overview of existing sign language
+          translation models, with a focus on LSTM and CNN architec-
+          tures, which are commonly used in this field.
+          LSTM (Long Short-Term Memory) models are well-suited
+          for capturing temporal dependencies and recognizing dynamic
+          movements in sign language. They excel in understanding the
+          nuanced aspects of sign language communication, particularly
+          in recognizing multi-word expressions due to their ability to
+          consider the order and timing of gestures.
+          On the other hand, CNN (Convolutional Neural Network)
+          models have been primarily used for static image classification
+          tasks in sign language recognition, such as hand detection and
+          segmentation. While proficient in extracting spatial features
+          from images, they lack the capability to capture the temporal
+          dynamics inherent in sign language. Despite this limitation,
+          their effectiveness in specific tasks makes them a valuable
+          component of sign language translation systems.</p>
+        <br>
+        <li>E. Training and Testing</li>
+        <p>For training and testing our models, we partitioned the
+          dataset into 80% for training and 20% for testing, and im-
+          plemented cross-validation to ensure robust evaluation.
+          On the CNN model side, we utilized the YoloV5 frame-
+          work and the pytorch library. Specifically, we employed the
+          yolov5s.pt model, the smallest model with 214 layers and
+          7,046,599 parameters.
+          For the LSTM model, we employed the Tensorflow library
+          and created a sequential model with 5 layers and 231,562
+          parameters. Each layer was defined with specific input shape
+          and activation settings.
+          To train the models, we prepared the data with a batch size
+          of 64 and conducted 150 epochs to optimize their performance.</p>
+      </ul>
     </div>
   </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Numpy.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Numpy</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Pandas.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Pandas</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/OpenCV.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>OpenCV</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/MediaPipe.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>MediaPipe</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Tensorflow.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Tensorflow</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/flask.png"
-          width="125"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Flask</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Colab.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Google Colab</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Drive.png"
-          width="150"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Google Drive</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/HTML5.png"
-          width="140"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>HTML5</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/CSS3.png"
-          width="140"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>CSS3</strong>
-      </h3>
-    </div>
-  </div>
-  <div class="col">
-    <div class="box">
-      <h3 class="text-center">
-        <img
-          src="../static/dataimage/Bootstrap.png"
-          width="190"
-          height="150"
-          class="rounded mx-auto d-block my-3"
-        /><strong>Bootstrap5</strong>
-      </h3>
+</div>
+
+<div class="row-logo">
+  <div class="column-logo">
+    <h2>Programs and Tools</h2>
+    <br>
+    <div class="images-container">
+      <div class="image-item">
+        <img src="../static/dataimage/Python.png">
+        <h3>Python</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/Numpy.png">
+        <h3>Numpy</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/Scikit_learn.png">
+        <h3>Scikit learn</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/OpenCV.png">
+        <h3>OpenCV</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/MediaPipe.png">
+        <h3>MediaPipe</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/Tensorflow.png">
+        <h3>Tensorflow</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/pytorch.png">
+        <h3>Pytorch</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/flask.png">
+        <h3>Flask</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/Colab.png">
+        <h3>Google Colab</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/Drive.png">
+        <h3>Google Drive</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/HTML5.png">
+        <h3>HTML5</h3>
+      </div>
+      <div class="image-item">
+        <img src="../static/dataimage/CSS3.png">
+        <h3>CSS3</h3>
+      </div>
     </div>
   </div>
 </div>

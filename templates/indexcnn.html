@@ -1,0 +1,33 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="row">
+    <section>
+        <form action="" autocomplete="off" method="POST" enctype="multipart/form-data">
+            <p>Upload Files</p>
+            <div>
+                {{ form.csrf_token }}
+                <input type="file" name="video" id="upload" style="display: none;">
+                <label style="color: black;" for="upload">Select Files</label>
+                {% for error in form.video.errors %}
+                <span class="error">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <button id="startUpload"><span>&#8682; Upload </span> <span class="uploading">Uploading.....</span></button>
+            <button class="cancle">Calncle Upload</button>
+            <div class="pr">
+                <strong>
+                    <h4 class="ex">Video</h4>
+                    <h4 class="size">2.5kb</h4>
+                </strong>
+                <progress id="uploadProgress" min="0" max="100" value="0"></progress>
+                <span class="progress-indicator"></span>
+                <h4>เวลาที่ใช้ในการประมวลผลของแต่ละภาพเฉลี่ย {{process_time}} วินาที</h5>
+                <h4>Accuracy: {{avg_process}} %</h4>
+                <h4>Class Name: {{class_name}}</h4>
+            </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="../static/main.js"></script>
+
+{% endblock %}

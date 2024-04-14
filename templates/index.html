@@ -1,104 +1,66 @@
 {% extends "layout.html" %} {% block body %}
 
-<br />
-<h1 class="text-center">
-  <i class="fa-solid fa-hands-bubbles" style="color: rgb(255, 235, 209)"></i>
-  <strong>โปรแกรมแปลภาษามือ (Sign Language)</strong>
-</h1>
-<h4 class="txt p-3">
-  ในการส่งผลงานตามข้อกำหนดของการรับทุนสนับสนุนภายใต้โครงการ“การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย
-  ครั้งที่ 25” สำหรับประเภทนักเรียน และประเภทนิสิต นักศึกษานั้น สวทช.
-  กำหนดให้ทุกโครงการที่ส่งผลงานจะต้องปรากฏข้อความข้อตกลงในการใช้ซอฟต์แวร์
-  (ภาษาไทยหรือภาษาอังกฤษ) ในผลงานดังกล่าว ซึ่งผู้พัฒนาสามารถจะใส่ไว้ที่
-  Readme.txt
-  หน้าแรกของการติดตั้งหน้าแรกของการเรียกโปรแกรมขึ้นใช้งานหรือส่วนใดส่วนหนึ่งของโปรแกรม
-  ได้แก่ help เมนู เป็นต้น
-</h4>
-<br /><br />
-<h1 class="text-lift">
-  <i class="fa-solid fa-folder-open" style="color: gold"></i>
-  <strong>หมวดหมู่คำ (Category)</strong>
-</h1>
-<br />
-<div class="row row-cols-1 row-cols-md-4 g-4 p-3">
-  <div class="col">
-    <a href="/PlayVideo/Family"
-      ><div class="box bg1">
-        <h2><strong>Family</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Feeling"
-      ><div class="box bg2">
-        <h2><strong>Feeling</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Person"
-      ><div class="box bg3">
-        <h2><strong>Person</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Place"
-      ><div class="box bg4">
-        <h2><strong>Place</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Pronoun"
-      ><div class="box bg5">
-        <h2><strong>Pronoun</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Question"
-      ><div class="box bg6">
-        <h2><strong>Question</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Sick"
-      ><div class="box bg7">
-        <h2><strong>Sick</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Time"
-      ><div class="box bg8">
-        <h2><strong>Time</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Verb"
-      ><div class="box bg9">
-        <h2><strong>Verb</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Greeting"
-      ><div class="box bg10">
-        <h2><strong>Greeting</strong></h2>
-      </div></a
-    >
-  </div>
-  <div class="col">
-    <a href="/PlayVideo/Weather"
-      ><div class="box bg11">
-        <h2><strong>Weather</strong></h2>
-      </div></a
-    >
+<div class="row">
+  <div class="column-head">
+    <h2>NTRODUCTION</h2>
+    <br>
+    <p>
+      Sign language serves as the primary mode of commu-nication for individuals with hearing disabilities, enabling
+      them to
+      express their thoughts, emotions, and ideas. However, the limited understanding of sign language among the general
+      population
+      poses significant challenges for effective communication between individuals who primarily use sign language and
+      those
+      who do not understand it. Bridging this communication gap is crucial for fostering inclusivity and equal
+      participation for
+      individuals with hearing disabilities in various social and professional contexts.
+      This research aims to improve sign language translation systems to facilitate seamless communication between
+      individuals with hearing disabilities and the wider community. Specifically, we focus on comparing the performance
+      of
+      two machinelearning architectures, LSTM (Long Short-Term Memory) and CNN (Convolutional Neural Network), in
+      translating
+      sign language gestures.
+      Utilizing the Python programming language and leveraging powerful libraries such as Mediapipe and OpenCV, we
+      collect
+      sign language gesture data through imitation and recording.
+      Our analysis reveals that the LSTM model excels in capturing the temporal dynamics and nuances of sign language
+      gestures, making it well-suited for detecting and interpreting actions within the gestures. However, the LSTM
+      model faces
+      challenges in accurately translating complex multi-word expressions, which are common in sign language
+      communication.
+      To address these challenges and enhance the accuracy of sign language translation, we conduct a comprehensive
+      comparative analysis of LSTM and CNN architectures. By evaluating their performance on multi-word translation
+      tasks,
+      we aim to identify the strengths and weaknesses of each approach. Factors such as translation accuracy, robustness
+      to variations
+      in gestures, computational efficiency, and real-time translation capability will be considered in our analysis.
+      The outcomes of our research will contribute to the development of more accurate and efficient sign language
+      translation systems, paving the way for improved communication and inclusivity for individuals with hearing
+      disabilities.
+      By bridging the gap between sign language users and the wider community, we aim to foster understanding, equal
+      participation, and empowerment for individuals with hearing disabilities.</p>
   </div>
 </div>
-<br />
+<div class="row">
+  <div class="column-model">
+    <h2>CNN</h2>
+    <p>(Click picture to use)</p>
+    <br>
+    <a href="/cnn"><img src="../static/dataimage/cnn.png" alt="cnn"></a>
+    <div class="button-container">
+      <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target="_blank" class="button-style">What is CNN?</a>
+    </div>
+  </div>
+  <div class="column-model">
+    <h2>LSTM</h2>
+    <p>(Click picture to use)</p>
+    <br>
+    <a href="/lstm"><img src="../static/dataimage/lstm.png" alt="lstm"></a>
+    <div class="button-container">
+      <a href="https://en.wikipedia.org/wiki/Long_short-term_memory" target="_blank" class="button-style">What is
+        LSTM?</a>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
